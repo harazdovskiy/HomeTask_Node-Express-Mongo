@@ -17,3 +17,4 @@
     "mongoose": "^5.12.11"
   }
 }
+// Add node_modules to .gitignore to avoid commiting node_modules to github
