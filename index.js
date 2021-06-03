@@ -8,6 +8,7 @@ app.use(express.json())
 const todos = require('./router/todos')
 app.use('/todos', todos)
 
+// Try to use https://www.npmjs.com/package/dotenv and load path to mongo as an environment var
 mongoose.connect('mongodb://localhost:27017/HomeTask', {
     useNewUrlParser: true,
     useUnifiedTopology: true,
