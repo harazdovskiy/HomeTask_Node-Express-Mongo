@@ -1,5 +1,7 @@
 const TodoModel = require('../models/todoList')
 
+// Joi schema validator should handle req.params.id, because user can pass id in wrong format and he would not receive proper http status and response
+
 module.exports = async (req, res, next) => {
     try {
         const todoId = req.params.id
